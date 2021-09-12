@@ -26,12 +26,10 @@ print(tuesday_sleep)
 ## Create a vector called `week1_sleep_weekdays`
 ## Assign the weekday values using indice slicing
 week1_sleep_weekdays <- week1_sleep[2:6]
-print(week1_sleep_weekdays)
 
 ## Add the total hours slept in week one using the `sum` function
 ## Assign the value to variable `total_sleep_week1`
 total_sleep_week1 <- sum(week1_sleep)
-print(total_sleep_week1)
 
 ## Create a vector called `week2_sleep` representing how many hours slept each night of the week
 ## Use the values 7.1, 7.4, 7.9, 6.5, 8.1, 8.2, 8.9
@@ -45,7 +43,7 @@ total_sleep_week2 <- sum(week2_sleep)
 total_sleep_week1 < total_sleep_week2
 
 ## Calculate the mean hours slept in week 1 using the `mean()` function
-mean(sum(week1_sleep))
+mean(week1_sleep)
 
 ## Create a vector called `days` containing the days of the week.
 ## Start with Sunday and end with Saturday
@@ -87,11 +85,11 @@ grades <- matrix(students_combined, byrow = TRUE, nrow = 3)
 
 ## Add a new student row with `rbind()`
 student04 <- c(95.2, 94.1)
-grades <- rbind(student04, grades)
+grades <- rbind(grades, student04)
 
 ## Add a new assignment column with `cbind()`
 assignment04 <- c(92.1, 84.3, 75.1, 97.8)
-grades <- cbind(assignment04, grades)
+grades <- cbind(grades, assignment04)
 
 ## Add the following names to columns and rows using `rownames()` and `colnames()`
 assignments <- c("Assignment 1", "Assignment 2", "Assignment 3")
@@ -99,9 +97,6 @@ students <- c("Florinda Baird", "Jinny Foss", "Lou Purvis", "Nola Maloney")
 
 rownames(grades) <- students
 colnames(grades) <- assignments
-
-# display grades matrix
-grades
 
 ## Total points for each assignment using `colSums()`
 colSums(grades)
