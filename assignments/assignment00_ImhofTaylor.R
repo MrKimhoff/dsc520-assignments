@@ -41,7 +41,7 @@ print(class_name)
 
 ## Assign the string value of TRUE to the variable is_good
 ## Print the value of is_good
-is_good <- 'TRUE'
+is_good <- TRUE
 print(is_good)
 
 ## Check the class of the variable is_good using the `class()` function
